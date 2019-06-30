@@ -1,6 +1,6 @@
 {
   "name": "@nachocasta/command-line-utils",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Personal command line utilities",
   "main": "index.js",
   "scripts": {
