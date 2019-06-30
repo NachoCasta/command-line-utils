@@ -4,7 +4,7 @@
   "description": "Personal command line utilities",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,10 +15,17 @@
     "line",
     "utils"
   ],
+  "bin": {
+    "create-component": "src/createComponent.js"
+  },
   "author": "Ignacio Castañeda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NachoCasta/command-line-utils/issues"
   },
-  "homepage": "https://github.com/NachoCasta/command-line-utils#readme"
+  "homepage": "https://github.com/NachoCasta/command-line-utils#readme",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "handlebars": "^4.1.2"
+  }
 }
