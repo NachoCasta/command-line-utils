@@ -1,0 +1,24 @@
+{
+  "name": "@nachocasta/command-line-utils",
+  "version": "0.1.0",
+  "description": "Personal command line utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachoCasta/command-line-utils.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "utils"
+  ],
+  "author": "Ignacio Castañeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachoCasta/command-line-utils/issues"
+  },
+  "homepage": "https://github.com/NachoCasta/command-line-utils#readme"
+}
