@@ -11,13 +11,13 @@ const createComponent = (name, noTestFiles = false) => {
 	}
 	fs.mkdirSync(folderName);
 	console.log("Folder created succesfully");
-	fs.readdirSync("src/templates/Component").forEach(templateName => {
+	fs.readdirSync(__dirname + "/templates/Component").forEach(templateName => {
 		if (templateName.endsWith("test.js") && noTestFiles) {
 			return;
 		}
 		const fileName = Handlebars.compile(templateName)({ Component: name });
 		const fileTemplate = fs
-			.readFileSync(`src/templates/Component/${templateName}`)
+			.readFileSync(__dirname + `/templates/Component/${templateName}`)
 			.toString();
 		const fileContent = Handlebars.compile(fileTemplate)({
 			Component: name
