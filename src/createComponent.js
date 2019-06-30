@@ -10,6 +10,7 @@ const createComponent = (name, noTestFiles = false) => {
 		throw new Error("Componente ya existe.");
 	}
 	fs.mkdirSync(folderName);
+	console.log("Folder created succesfully");
 	fs.readdirSync("src/templates/Component").forEach(templateName => {
 		if (templateName.endsWith("test.js") && noTestFiles) {
 			return;
@@ -22,6 +23,7 @@ const createComponent = (name, noTestFiles = false) => {
 			Component: name
 		});
 		fs.writeFileSync(`./${name}/${fileName}`, fileContent);
+		console.log(`${fileName} created succesfully.`);
 	});
 };
 
@@ -40,9 +42,6 @@ parser.addArgument(["-nt", "--noTests"], {
 
 const args = parser.parseArgs();
 
-console.log(args);
-
 const { name, noTests } = args;
 
 createComponent(name, noTests);
-
