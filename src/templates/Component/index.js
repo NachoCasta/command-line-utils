@@ -1,2 +1,2 @@
-export { default } from "./{{Component}}View";
+export { default } from "./{{Component}}Container";
 export * from "./{{Component}}Reducer";
