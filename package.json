@@ -4,7 +4,8 @@
     "description": "Personal command line utilities",
     "main": "index.js",
     "scripts": {
-        "start": "node src/index.js"
+        "start": "node src/index.js",
+        "test": ""
     },
     "repository": {
         "type": "git",
