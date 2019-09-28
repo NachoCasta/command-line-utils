@@ -1,31 +1,32 @@
 {
-  "name": "@nachocasta/command-line-utils",
-  "version": "1.1.0",
-  "description": "Personal command line utilities",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NachoCasta/command-line-utils.git"
-  },
-  "keywords": [
-    "command",
-    "line",
-    "utils"
-  ],
-  "bin": {
-    "create-component": "src/createComponent.js"
-  },
-  "author": "Ignacio Castañeda",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NachoCasta/command-line-utils/issues"
-  },
-  "homepage": "https://github.com/NachoCasta/command-line-utils#readme",
-  "dependencies": {
-    "argparse": "^1.0.10",
-    "handlebars": "^4.1.2"
-  }
+    "name": "@nachocasta/command-line-utils",
+    "version": "1.1.0",
+    "description": "Personal command line utilities",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NachoCasta/command-line-utils.git"
+    },
+    "keywords": [
+        "command",
+        "line",
+        "utils"
+    ],
+    "bin": {
+        "create-component": "src/createComponent.js",
+        "create-crud": "src/createCRUD.js"
+    },
+    "author": "Ignacio Castañeda",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/NachoCasta/command-line-utils/issues"
+    },
+    "homepage": "https://github.com/NachoCasta/command-line-utils#readme",
+    "dependencies": {
+        "argparse": "^1.0.10",
+        "handlebars": "^4.1.2"
+    }
 }
