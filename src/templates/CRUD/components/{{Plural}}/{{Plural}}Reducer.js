@@ -76,4 +76,4 @@ const remove{{Singular}} = id => ({
     payload: id
 });
 
-const setQuery = query => ({ type: "SET_QUERY", payload: query });
+const setQuery = query => ({ type: "SET_{{PLURAL}}_QUERY", payload: query });
