@@ -57,7 +57,7 @@ export const actions = dispatch => ({
 });
 
 const set{{Plural}} = {{plural}} => ({
-    type: "SET_ORGANIZATIONS",
+    type: "SET_{{PLURAL}}",
     payload: {{plural}}
 });
 
